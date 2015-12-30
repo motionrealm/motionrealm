@@ -1,0 +1,84 @@
+// Variables
+//------------------------------------------------------
+$footer-background-color:            $cararra !default;
+$footer-menu-title-color:            darken($cararra, 30%) !default;
+$footer-menu-item-color:             darken($silver, 20%) !default;
+$footer-menu-item-color-hover:       $picton-blue-bright !default;
+$footer-logo-color:                  $picton-blue-bright !default;
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("footer") {
+
+  /**
+   * footer
+   * --------------------------------------------------
+   */
+
+  .footer {
+    padding: 40px 0;
+    background-color: $footer-background-color;
+
+    &-logo {
+      float: left;
+      padding: 0 20px;
+      width: 20%;
+    }
+    &-nav {
+      float: left;
+    }
+    @media (max-width: 768px) {
+      &-logo {
+        margin-bottom: 20px;
+      }
+      &-logo,
+      &-nav {
+        float: none;
+        display: block;
+        width: 100%;
+      }      
+    }
+    &-logo {
+      margin-top: -5px;
+      height: 32px;
+      line-height: 32px;
+
+      & img {
+        margin-right: 10px;
+      }
+      & a {
+        font-size: 20px;
+        font-weight: bold;
+        color: $footer-logo-color;
+      }
+      & a:hover,
+      & a:active {
+        text-decoration: none;
+      }
+    }
+    &-nav .nav-title {
+      margin-bottom: 15px;
+      color: $footer-menu-title-color;
+    }
+    &-nav .nav-item {
+      line-height: 28px;
+      & > a {
+        color: $footer-menu-item-color;
+      }
+      & > a:hover,
+      & > a:active {
+        color: $footer-menu-item-color-hover;
+        text-decoration: none;
+      }
+    }
+    &-copyright {
+      color: $footer-menu-item-color;
+    }
+  }
+
+}
+
+

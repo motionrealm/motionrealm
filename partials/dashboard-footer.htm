@@ -1,0 +1,32 @@
+  {% put scripts %}
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      
+      <!--script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script-->
+      <script src="{{ 'assets/js/bootstrap.min.js'|theme }}" crossorigin="anonymous"></script>
+      <script src="{{ 'assets/js/icheck.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/jquery.fs.selecter.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/jquery.fs.stepper.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/metisMenu.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/perfect-scrollbar.jquery.js'|theme }}"></script>
+      <script src="{{ 'assets/js/dropdowns-enhancement.js'|theme }}"></script>
+      <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        $("#sidebar-nav").metisMenu();
+        $("select").selecter();
+        $(document).ready(function(){
+          $('.navbar-twitch [data-toggle="tooltip"]').tooltip();
+        });
+        $('.selecter.open').ready(function(){
+          $('.selecter.open').removeClass('focus bottom open').addClass('focus top open');
+        });
+        $(document).click( function(event){
+          event.preventDefault();
+        });
+        $('.subnav').perfectScrollbar();
+      </script>
+    {% endput %}
+  </body>
+  </html>

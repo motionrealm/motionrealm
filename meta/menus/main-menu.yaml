@@ -1,0 +1,39 @@
+name: 'Main menu'
+items:
+    -
+        title: Home
+        type: cms-page
+        code: mrdash-home
+        reference: home
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: Videos
+        type: cms-page
+        code: mrdash-videos
+        reference: videos
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: Tools
+        type: url
+        url: '#'
+        code: ''
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+        items:
+            -
+                title: 'Thumbnail Editor'
+                type: cms-page
+                code: mrdash-tools-thumbedit
+                reference: tools/thumbnail-editor
+                viewBag:
+                    isExternal: '0'
+                    isHidden: '0'
+                    cssClass: ''

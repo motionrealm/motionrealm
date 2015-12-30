@@ -1,0 +1,25 @@
+description = "footer"
+==
+function onStart()
+{
+  $this["auto_copyright"] = date("Y");
+}
+==
+    <div class="footer">
+      <div class="container">
+        <div class="clearfix">
+          <div class="footer-logo"><a href="#">{% partial "motionrealm_wlogo" %}</a></div>
+          <ul class="footer-nav pull-right list-inline list-unstyled">
+            <li class="nav-item"><a href="#">Login</a></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><a href="#">Community</a></li>
+            <li class="nav-item"><a href="#">FAQ</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright text-right">
+          Copyright © {{ auto_copyright }} {{ this.theme.site_name }}. All rights reserved.
+        </div>
+      </div>
+    </div>

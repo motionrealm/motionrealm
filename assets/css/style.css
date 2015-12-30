@@ -1,0 +1,716 @@
+body, .mr {
+	background: #E5E5E5;
+  	padding-top: 60px;
+  	height: 100%;
+}
+
+body, #home.mr {
+	background: #fff;
+  	padding-top: 0px;
+}
+
+/* Dashboard beta only */
+.navbar-default.navbar-twitch {
+	background-color: #046FA0;
+}
+.navbar-default.navbar-twitch .navbar-nav > li > a {
+	color: #19B5FE;
+}
+.navbar-default.navbar-twitch .navbar-nav > li.active a {
+	color: #fff;
+}
+.navbar-twitch .navbar-header,
+.navbar-twitch .navbar-brand {
+	background-color: #19B5FE;
+}
+.navbar-twitch .navbar-nav > li > .subnav {
+	background: #07648C;
+	list-style-type: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+  	-webkit-overflow-scrolling: touch;
+}
+.navbar-twitch .navbar-nav > li > .subnav li.subnav-header {
+	color: #19B5FE;
+	border-bottom: 1px #19B5FE solid;
+	background: none;
+}
+.navbar-twitch .navbar-nav > li > .subnav li {
+}
+.navbar-twitch .navbar-nav > li > .subnav li a{
+	background: none;
+	color: #fff;
+	border-bottom: 1px #1690C9 solid;
+}
+.navbar-twitch .navbar-nav > li > .subnav li a:active,
+.navbar-twitch .navbar-nav > li > .subnav li a:hover,
+.navbar-twitch .navbar-nav > li > .subnav li a:focus{
+	background: #0D78A5;
+	color: #fff;
+	border-bottom: 1px #1690C9 solid;
+}
+
+@media only screen and (min-width : 320px){
+	#dashboard-beta.mr, #dashboard.mr, #dashboard-videos.mr {
+		padding-top: 78px;
+	}
+	.navbar-twitch {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		height: 65px;
+		border-radius: 0px;
+		border: 0px;
+		z-index: 1030;
+	}
+	.navbar-twitch > .container {
+		padding: 0px;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-header,
+	.navbar-twitch .navbar-brand {
+		float: left;
+		display: inline-block;
+		width: 50.9px;
+		margin: 0px;
+	}
+	.navbar-twitch .navbar-brand {
+		height: 65px;   
+	}
+	.navbar-twitch > .container .navbar-brand {
+		padding: 0px;
+		margin: 0px;
+	}
+	.navbar-twitch > .container .navbar-brand > .small-nav {
+		display: inline-block;
+	}
+	.navbar-twitch > .container .navbar-brand > .small-nav > span.logo {
+		display: inline-block;
+		padding: 16px 0px 20px 0px;
+		font-size: 23pt;
+		margin-left: -3px;
+	}
+	.navbar-twitch .navbar-nav > li {
+		float: left;
+	}
+	.navbar-twitch .navbar-collapse {
+		padding: 0px;
+	}
+	.navbar-twitch .navbar-nav {
+		float: none;
+		margin: 0px;
+	}
+	.navbar-twitch .navbar-nav > li > a {
+		padding: 0px;
+		height: 65px;
+		width: 50.9px;
+	}
+	.navbar-twitch .navbar-nav > li > a > span {
+		display: inline-block;
+		font-size: 15pt;
+		padding: 24px 15px 20px 0px;
+		text-align: center;
+		height: 66px;
+		width:65px;
+	}
+	.navbar-twitch .navbar-nav > li > a > span.profile-nav {
+		display: inline-block;
+		font-size: 15pt;
+		padding: 18px 10px 15px 10px;
+		text-align: center;
+		height:65px;
+		width: 50.9px;
+	}
+	.navbar-twitch .navbar-nav > li > a > span.notificationsNav {
+		display: inline-block;
+		font-size: 15pt;
+		padding: 25px 21px 0px 10px;
+		text-align: center;
+		height: 65px;
+		width: 50.9px;
+	}
+	.navbar-twitch .tooltip,
+	.navbar-twitch .tooltip .tooltip-inner {
+		max-width: auto;
+		white-space:nowrap;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav {
+		z-index: 9999;
+		position: fixed;
+		top: 65px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 0px 0px 20px 0px;
+		display: none;
+		width: 46vh;
+	}
+	.navbar-twitch .navbar-nav > li:hover > .subnav{
+		display: block;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li.subnav-header {
+		font-size: 16pt;
+		font-weight: bold;
+		padding: 10px 0px 10px 20px;
+		width: 46vh;
+	}
+	.navbar-twitch .navbar-nav > li > #notifications .subnav-header {
+		padding:10px 50px 0px 20px;
+		width: 46vh;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a{
+		padding: 10px 0px 10px 20px;
+		display: block;
+		font-weight: bold;
+		font-size: 13pt;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a p{
+		font-weight: normal;
+		font-size: 11.1pt;
+		letter-spacing: -0.2px;
+	}
+}
+@media only screen and (min-width : 480px){
+	#dashboard-beta.mr, #dashboard.mr, #dashboard-videos.mr {
+		padding-top: 88px;
+	}
+	.navbar-twitch {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		height: 76px;
+		border-radius: 0px;
+		border: 0px;
+		z-index: 1030;
+	}
+	.navbar-twitch > .container {
+		padding: 0px;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-header,
+	.navbar-twitch .navbar-brand {
+		float: left;
+		display: inline-block;
+		width: 76px;
+		margin: 0px;
+	}
+	.navbar-twitch .navbar-brand {
+		height: 76px;   
+	}
+	.navbar-twitch > .container .navbar-brand {
+		padding: 0px;
+		margin: 0px;
+	}
+	.navbar-twitch > .container .navbar-brand > .small-nav {
+		display: inline-block;
+	}
+	.navbar-twitch > .container .navbar-brand > .small-nav > span.logo {
+		display: inline-block;
+		padding: 20px 0px 20px 2.1px;
+		font-size: 29pt;
+	}
+	.navbar-twitch .navbar-nav > li {
+		float: left;
+	}
+	.navbar-twitch .navbar-collapse {
+		padding: 0px;
+	}
+	.navbar-twitch .navbar-nav {
+		float: left;
+		margin: 0px;
+	}
+	.navbar-twitch .navbar-nav > li > a {
+		padding: 0px;
+		height: 76px;
+		width: 76px;
+	}
+	.navbar-twitch .navbar-nav > li > a > span {
+		display: inline-block;
+		font-size: 18pt;
+		padding: 28px 15px 20px 12px;
+		text-align: center;
+		height: 76px;
+		width: 76px;
+	}
+	.navbar-twitch .navbar-nav > li > a > span.profile-nav {
+		display: inline-block;
+		font-size: 18pt;
+		padding: 18px 15px 15px 15px;
+		text-align: center;
+		height: 76px;
+		width: 76px;
+	}
+	.navbar-twitch .navbar-nav > li > a > span.notificationsNav {
+		display: inline-block;
+		font-size: 18pt;
+		padding: 28px 15px 0px 12px;
+		text-align: center;
+		height: 76px;
+		width: 76px;
+	}
+	.navbar-twitch .tooltip,
+	.navbar-twitch .tooltip .tooltip-inner {
+		max-width: auto;
+		white-space:nowrap;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav {
+		z-index: 9999;
+		position: fixed;
+		top: 76px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 0px 0px 20px 0px;
+		display: none;
+		width: 100vh;
+		
+	}
+	.navbar-twitch .navbar-nav > li:hover > .subnav{
+		display: block;
+	}
+
+	.navbar-twitch .navbar-nav > li > .subnav li.subnav-header {
+		font-size: 26pt;
+		font-weight: bold;
+		padding: 10px 265px 10px 20px;
+		width: 100vh;
+	}
+	.navbar-twitch .navbar-nav > li > #notifications .subnav-header {
+		padding:10px 50px 0px 20px;
+		width: 100vh;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a{
+		padding: 10px 200px 0px 20px;
+		display: block;
+		font-weight: bold;
+		font-size: 18pt;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a p{
+		font-weight: normal;
+		font-size: 12.1pt;
+		letter-spacing: -0.3px;
+	}
+}
+
+@media only screen and (min-width : 768px){
+	#dashboard-beta.mr, #dashboard.mr, #dashboard-videos.mr {
+		padding-top: 15px;
+		padding-left: 78px;
+	}
+	.navbar-twitch {
+		position: fixed;
+		top: 0px;
+		width: 76px;
+		height: 100%;
+		border-radius: 0px;
+		border: 0px;
+		z-index: 1030;
+		bottom: 0px;
+	}
+	.navbar-twitch > .container {
+		padding: 0px;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-header,
+	.navbar-twitch .navbar-brand {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0px;
+	}
+	.navbar-twitch .navbar-brand {
+		height: 80px;   
+	}
+	.navbar-twitch > .container .navbar-brand {
+		padding: 0px;
+		margin: 0px;
+	}
+	.navbar-twitch > .container .navbar-brand > .small-nav {
+		display: block;
+	}
+	.navbar-twitch > .container .navbar-brand > .small-nav > span.logo {
+		display: block;
+		padding: 20px 0px 20px 2.1px;
+		font-size: 29pt;
+	}
+	.navbar-twitch .navbar-nav > li {
+		float: none;
+	}
+	.navbar-twitch .navbar-collapse {
+		padding: 0px;
+	}
+	.navbar-twitch .navbar-nav {
+		float: none;
+		margin: 0px;
+	}
+	.navbar-twitch .navbar-nav > li > a {
+		padding: 0px;
+	}
+	.navbar-twitch .navbar-nav > li > a > span {
+		display: block;
+		font-size: 18pt;
+		padding: 25px 15px 20px 12px;
+		text-align: center;
+	}
+	.navbar-twitch .navbar-nav > li > a > span.profile-nav {
+		display: block;
+		font-size: 18pt;
+		padding: 15px 15px 15px 15px;
+		text-align: center;
+	}
+	.navbar-twitch .navbar-nav > li > a > span.notificationsNav {
+		display: block;
+		font-size: 18pt;
+		padding: 25px 15px 0px 12px;
+		text-align: center;
+	}
+	.navbar-twitch .tooltip,
+	.navbar-twitch .tooltip .tooltip-inner {
+		max-width: auto;
+		white-space:nowrap;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav {
+		z-index: 9999;
+		position: fixed;
+		top: 0;
+		left: 76px;
+		bottom: 0;
+		padding: 0px 0px 20px 0px;
+		display: none;
+		width: 43%;
+		height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.navbar-twitch .navbar-nav > li:hover > .subnav{
+		display: block;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li.subnav-header {
+		font-size: 16pt;
+		font-weight: bold;
+		padding: 10px 0px 10px 20px;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-nav > li > #notifications .subnav-header {
+		padding: 10px 0px 0px 20px;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a{
+		padding: 10px 20px 10px 20px;
+		display: block;
+		font-weight: bold;
+		font-size: 14pt;
+		width: 100%;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a p{
+		font-weight: normal;
+		font-size: 10.1pt;
+		letter-spacing: -0.3px;
+	}
+	.navbar-twitch .navbar-nav {
+		overflow: hidden;
+	}
+}
+@media only screen and (min-width : 992px){
+ 	.navbar-twitch .navbar-nav > li > .subnav {
+		width: 20%;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li.subnav-header {
+		font-size: 16pt;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a{
+		font-weight: bold;
+		font-size: 14pt;
+	}
+	.navbar-twitch .navbar-nav > li > .subnav li a p{
+		font-size: 10.1pt;
+		letter-spacing: -0.3px;
+		/*margin-left: 13%;*/
+	}
+	.navbar-twitch .navbar-nav > li > .subnav .fa-fw {
+		margin-left: 0px;
+	}	
+}	
+
+/* Off the line */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.footer {
+	width: 100%;
+	margin-top: 1px;
+}
+
+@media only screen and (max-width: 768px){
+	.footer {
+		margin-bottom: -600px;
+	}
+}
+@media only screen and (max-width: 768px){ 
+	#welcome-screen.jumbotron {
+		padding-top: 1px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#welcome-screen.jumbotron h1 {
+		font-weight: bold;
+		font-size: 25px;
+	}
+	#welcome-screen.jumbotron p.lead {
+		font-size: 13px;
+	}
+	#video-list .vthumbnail {
+		height: auto;
+		display: block;
+		max-width: 100%;
+	}
+}
+
+#welcome-screen {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+#welcome-screen h1 {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+#welcome-screen p.lead {
+	font-size: 23px;
+}
+
+#dialog {
+	padding-top: 10px;
+	padding-bottom: 2px;
+}
+
+#dialog p.lead {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+#sort-label, #sort-dd {
+	display: inline-block;
+}
+
+#video-list .vthumbnail {
+	width: 100%;
+	display: inline-block;
+	max-height: 100%;
+}
+
+#mr-dash-text {
+  color: #FFF;
+}
+
+/* Settings */
+.settings-content {
+	padding: 30px;
+}
+
+/* Home */
+#boot-screen.jumbotron {
+	background: rgb(25,181,254);
+	background: -moz-linear-gradient(-45deg,  rgba(25,181,254,0.6) 0%, rgba(1,103,151,1) 100%);
+	background: -webkit-linear-gradient(-45deg,  rgba(25,181,254,0.6) 0%,rgba(1,103,151,1) 100%);
+	background: linear-gradient(180deg,  rgba(25,181,254,0.6) 0%,rgba(1,103,151,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19b5fe', endColorstr='#016797',GradientType=1 );
+	opacity: 50%;
+	margin: 0;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	color: #fff;
+	border-radius: 0px;
+	margin-top: -8.6px;
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+.bs-wrapper {
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#boot-screen #mr_wlogo {
+	padding-left: 35px;
+}
+
+#boot-screen h1,
+#boot-screen p.lead {
+	padding-left: 30px;
+}
+
+#boot-screen h1 {
+	font-size: 73px;
+	font-weight: bold;
+	letter-spacing: -8px;
+	line-height: 0.81em;
+	margin-top: -10px;
+	width: 92.72%;
+	padding-top: 10px;
+	box-shadow: none;
+}
+
+#boot-screen p.lead {
+	font-size: 20px;
+	width: 90%;
+}
+
+#boot-screen #signUp {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#boot-screen #signUp h2 {
+	margin-top: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+#boot-screen #signUp .checkbox {
+	padding-left: 20px;
+	margin-bottom: 18px;
+}
+
+#boot-screen #signUp p{
+	margin-bottom: 0px;
+}
+
+#boot-screen-2 {
+	background: #016797;
+	color: #fff;
+	border-radius: 0px;
+	padding: 20px;
+}
+
+#boot-screen-2 h2{
+	font-size: 38px;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+
+#mrBlogPost.content img {
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#mrBlog.featured-images {
+	height: 300px; 
+    overflow: hidden;
+}
+
+#boot-screen #mr_wlogo {
+	fill: #fff;
+	display: block;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 40%;
+  	padding-top: 60px;
+}
+
+.footer-logo #mr_wlogo {
+	fill: #8c8c8c;
+	display: block;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+}
+
+.navbar-twitch.open > .container .navbar-brand > .full-nav #mr_wlogo {
+	fill: #fff;
+  	width: 80%;
+}
+
+.svg-container {
+	display: inline-block;
+    position: relative;
+    padding-bottom: 14%;
+    padding-right: 6%;
+    width: 100%;
+    vertical-align: middle;
+    margin: 0;
+}
+
+#btnContribute.btn a {
+	margin-top: 13px;
+}
+
+#reminderPart {
+	background-position: 720px -40px;
+	background-repeat: no-repeat;
+	padding-top: 130px;
+    padding-bottom: 390px;
+    margin-top: -20px;
+    z-index: -999;
+    height: 50vh;
+    max-height: 50vh;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -18.438em;
+}
+
+#notificationBadge.badge {
+	position: relative;
+	top: -35px;
+	left: 10px;
+}
+
+.load-spin {
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

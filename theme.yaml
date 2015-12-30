@@ -1,0 +1,17 @@
+name: MotionRealm
+description: 'Main default theme for MotionRealm website'
+author: 'MotionRealm / Ned Palacios'
+homepage: ''
+code: panda
+
+form:
+ fields:
+  site_name:
+   label: MotionRealm
+   comment: 'Just a site name freako.'
+   default: MotionRealm
+
+require:
+- RainLab.User
+- RainLab.Blog
+- ShahiemSeymore.Roles			

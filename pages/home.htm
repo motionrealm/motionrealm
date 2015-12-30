@@ -1,0 +1,115 @@
+url = "/"
+layout = "home"
+
+[session]
+security = "user"
+==
+<div class="wrapper">
+	<div class="bs-wrapper" style="background-image: url({{ 'assets/img/control-room.jpg'|theme }});">
+	<div class="jumbotron" id="boot-screen">
+		<div class="container">
+			<div class="col-md-8" class="bs-left">
+				{% partial "motionrealm_wlogo" %}
+				<h1>Make content more.</h1>
+				<p class="lead">Access to the most powerful video creation tools, discuss and collaborate with other creators, manage your channel, and find cool stuff that you can integrate to your content for free.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-default" id="signUp">
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="signUp_Name" placeholder="Your name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="signUp_Username" placeholder="Pick your username">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="signUp_Email" placeholder="Enter your e-mail">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" id="signUp_Password" placeholder="Your password">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Check me out
+								</label>
+							</div>
+							<button type="submit" class="btn btn-success btn-lg btn-block">Sign-up</button>
+							<p class="text-center">- or -</p>
+							<button type="submit" class="btn btn-danger btn-block">Sign-in using Google</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="jumbotron" id="boot-screen-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center">Why choose MotionRealm?</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pull-left">
+						<span class="fa-stack fa-5x">
+						  <i class="fa fa-circle-thin fa-stack-2x"></i>
+						  <i class="fa fa-bolt fa-stack-1x"></i>
+						</span>
+					</div>
+					<h2>Fast.</h2>
+					<p>Whether you're on a slow internet connection or not, we're commited to bringing you and your content in seconds.</p>
+				</div>
+				<div class="col-md-6">
+					<div class="pull-left">
+						<span class="fa-stack fa-5x">
+						  <i class="fa fa-circle-thin fa-stack-2x"></i>
+						  <i class="fa fa-thumbs-up fa-stack-1x"></i>
+						</span>
+					</div>	
+					<h2>Free.</h2>
+					<p>We deserve the people to make the platform for free and we are happy to use it for you.</p>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="col-md-6">
+					<div class="pull-left">
+						<span class="fa-stack fa-5x">
+						  <i class="fa fa-circle-thin fa-stack-2x"></i>
+						  <i class="fa fa-eye fa-stack-1x"></i>
+						</span>
+					</div>
+					<h2>Easy-to-use.</h2>
+					<p>With easy navigation and experience, you can easily get up and get started in our platform in seconds.</p>
+				</div>
+				<div class="col-md-6">
+					<div class="pull-left">
+						<span class="fa-stack fa-5x">
+						  <i class="fa fa-ban fa-stack-2x"></i>
+						</span>
+					</div>
+					<h2>Ad-free.</h2>
+					<p>Everybody hates ads right?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="reminderPart" style="background-image: url({{ 'assets/img/mr-mockup-1.png'|theme }});">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>We're just getting started.</h1>
+					<p class="lead">MotionRealm is still in Alpha stage. There are more plenty things to come. 
+					<br> You can help make it more stable by contribute on GitHub.
+					</p>
+					<p>
+					<a href="#" class="btn btn-lg btn-primary" id="btnContribute"><span class="fa fa-github"></span> Contribute</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

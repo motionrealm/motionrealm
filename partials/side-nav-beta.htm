@@ -1,0 +1,155 @@
+<div class="navbar navbar-default navbar-twitch" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">
+				<span class="small-nav" data-toggle="tooltip" data-placement="right" title="Home"> 
+					<span class="logo"> &nbsp;<i class="icon-motionrealm_svg fa-lg"></i> </span> 
+				</span>
+			</a>
+		</div>
+		<div class="">
+			<ul class="nav navbar-nav">
+				<li class="{% if( this.page.id == 'settings') %}active {% endif %}">
+					<a href="#">
+						<span class="small-nav profile-nav" data-toggle="tooltip" data-placement="right" title="Profile"> 
+							<img src="{{ 'assets/img/profile.jpg'|theme }}" class="img-responsive img-circle" alt="Profile Pic" /> 
+						</span>
+					</a>
+					<ul class="subnav">
+						<li class="subnav-header">Profile</li>
+						<li><a href="#">
+							<span class="fa fa-user fa-fw"></span>
+							Account Settings
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">
+							<span class="fa fa-refresh fa-fw"></span>
+							Updates
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">
+							<span class="fa fa-signal fa-fw"></span>
+							Stats
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">
+						<span class="fa fa-sign-out fa-fw"></span>
+							Log Out
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li class="subnav-header">Use MotionRealm as</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<span class="small-nav notificationsNav" data-toggle="tooltip" data-placement="right" title="Notifications"> 
+							<i class="icon-notification"></i> 
+							<span class="badge badge-primary" id="notificationBadge">42</span>
+						</span>
+					</a>
+					<ul class="subnav" id="notifications">
+						<li class="subnav-header"><p>Notifications <span class="badge badge-primary">42</span></p></li>
+						<!--li><a href="#">Account Settings
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">Log Out
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li-->
+						<li><span class="text-center text-primary">No notifications</span></li>
+					</ul>
+				</li>
+				<li class="{% if( this.page.id == 'dashboard-videos') %}active {% endif %}">
+					<a href="#">
+						<span class="small-nav" data-toggle="tooltip" data-placement="right" title="Manager"> 
+							<span class="fa fa-server"></span> 
+						</span>
+					</a>
+					<ul class="subnav">
+						<li class="subnav-header">Content Manager</li>
+						<li><a href="#">
+							<i class="icon-video-camera fa-fw"></i>
+							Video Manager
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">
+							<i class="icon-list3 fa-fw"></i>
+							Playlist Manager
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">
+							<i class="icon-price-tags fa-fw"></i>
+							Tag Manager
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+					</ul>
+				</li>
+				<li class="{% if( this.page.id == null) %}active {% endif %}">
+					<a href="#">
+						<span class="small-nav" data-toggle="tooltip" data-placement="right" title="Social Manager"> 
+							<i class="icon-share2"></i> 
+						</span>
+					</a>
+					<ul class="subnav">
+						<li class="subnav-header">Social Manager</li>
+						<li><a href="#">
+							<span class="fa fa-facebook fa-fw"></span>
+							Facebook
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">
+						<span class="fa fa-twitter fa-fw"></span>
+							Twitter
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">
+						<span class="fa fa-instagram fa-fw"></span>
+							Instagram
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+					</ul>
+				</li>
+				<li class="{% if( this.page.id == null) %}active {% endif %}">
+					<a href="#">
+						<span class="small-nav" data-toggle="tooltip" data-placement="right" title="Tools"> 
+							<i class="icon-wrench"></i> 
+						</span>
+					</a>
+					<ul class="subnav">
+						<li class="subnav-header">Tools</li>
+						<li><a href="#">Thumbnail Generator
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">Keyword Analyzer
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">Free Music Search
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+					</ul>
+				</li>
+				<li class="{% if( this.page.id == 'settings') %}active {% endif %}">
+					<a href="#">
+						<span class="small-nav" data-toggle="tooltip" data-placement="right" title="Settings"> 
+							<i class="icon-cog"></i> 
+						</span>
+					</a>
+					<ul class="subnav">
+						<li class="subnav-header">Settings</li>
+						<li><a href="#">Channel
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">Branding Defaults
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">Social Management
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+						<li><a href="#">Advanced
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
+						</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</div>

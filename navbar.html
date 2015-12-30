@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>-->
+            <a href="#menu-toggle" class="navbar-toggle collapsed" id="menu-toggle" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="navbar-brand" href="{{ 'home'|page }}"><img alt="{{ this.theme.site_name }}" src="{{ 'assets/img/bs-navbar-logo.png'|theme }}"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Current</li>
+                  <li><a href="#">Dash</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                {% if user %}
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{ user.name }} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Account settings</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+                {% else %}
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, Guest<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sign-up</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Login</a></li>
+                </ul>
+                {% endif %}
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>

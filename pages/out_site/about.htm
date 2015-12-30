@@ -1,0 +1,11 @@
+title = "About"
+url = "/about"
+layout = "second"
+==
+<div class="row">
+	<div class="col-md-12">
+		<h1>{{ this.page.title }}</h1>
+		{% component 'content' %}
+		{% placeholder ordering title="Ordering information" type="text" %}
+	</div>
+</div>	

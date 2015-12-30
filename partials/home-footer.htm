@@ -1,0 +1,24 @@
+description = "footer partial"
+==
+    {% partial "footer-links" %}
+    {% put scripts %}
+      <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+      {% framework %}
+      
+      <!--script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script-->
+      <script src="{{ 'assets/js/bootstrap.min.js'|theme }}" crossorigin="anonymous"></script>
+      <script src="{{ 'assets/js/icheck.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/jquery.fs.selecter.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/jquery.fs.stepper.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/metisMenu.min.js'|theme }}"></script>
+      <script src="{{ 'assets/js/dropdowns-enhancement.js'|theme }}"></script>
+      <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+      });
+      $("#sidebar-nav").metisMenu();
+      </script>
+    {% endput %}
+  </body>
+  </html>

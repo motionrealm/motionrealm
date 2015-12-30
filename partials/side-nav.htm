@@ -1,0 +1,20 @@
+<!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul id="sidebar-nav" class="nav nav-pills nav-stacked">
+      <li class="sidebar-brand">
+        <a href="#">
+          Admin
+        </a>
+      </li>
+      <li class="{% if( this.page.id == 'dashboard') %}active {% endif %}">
+        <a href="{{ 'dashboard'|page }}"><i class="fa fa-home fa-fw fa-lg"></i> Dashboard</a>
+      </li>
+      <li class="{% if( this.page.id == 'dashboard-videos') %}active {% endif %}">
+        <a href="{{ 'dashboard/videos'|page }}"><i class="fa fa-film fa-fw fa-lg"></i> Videos</a>
+      </li>
+      <li class="{% if( this.page.id == 'settings') %}active {% endif %}">
+        <a href="{{ 'settings'|page }}"><i class="fa fa-cog fa-fw fa-lg"></i> Settings</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
