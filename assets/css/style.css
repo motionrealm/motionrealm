@@ -176,7 +176,7 @@ body, #home.mr {
 		font-weight: normal;
 		font-size: 11.1pt;
 		letter-spacing: -0.2px;
-		margin-left: 8%;
+		margin-left: 10%;
 	}
 	.navbar-twitch .navbar-nav > li > .subnav .fa-fw {
 		margin-left: 0px;
@@ -427,7 +427,7 @@ body, #home.mr {
 	.navbar-twitch .navbar-nav > li > .subnav li a p{
 		font-size: 10.1pt;
 		letter-spacing: -0.3px;
-		margin-left: 13%;
+		margin-left: 6.8%;
 	}
 }
 @media only screen and (min-width : 992px){
