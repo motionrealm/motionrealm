@@ -18,6 +18,14 @@
         /*$(document).click( function(event){
           event.preventDefault();
         });*/
+        $(document).ready(function() {
+            $('#video-list').DataTable({
+              "searching": false,
+              "paging": false,
+              "info": false,
+              "columnDefs": [ { "sortable": false, "targets": 0 } ]
+            });
+        } );
         $('.subnav').perfectScrollbar();
       </script>
     {% endput %}
