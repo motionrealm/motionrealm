@@ -1,9 +1,9 @@
 {% set posts = __SELF__.posts %}
 <div class="col-md-8">
-<div class="post-list">
+    <div class="post-list">
 
-    {% for post in posts %}
-            <h2><a href="{{ 'post'|page({ slug: post.slug }) }}">{{ post.title }} <small>{{ category.name }}</small></a></h2>
+        {% for post in posts %}
+        <h2><a href="{{ 'post'|page({ slug: post.slug }) }}">{{ post.title }} <small>{{ category.name }}</small></a></h2>
             <!--p class="lead">
                 by <a href="index.php">Start Bootstrap</a>
             </p-->
@@ -19,49 +19,49 @@
             <hr>
             <!--img class="img-responsive" src="http://placehold.it/900x300" alt=""-->
             {% if post.featured_images.count %}
-                <div class="featured-images text-center">
-                    {% for image in post.featured_images %}
-                        <p>
-                            <img
-                                data-src="{{ image.filename }}"
-                                src="{{ image.path }}"
-                                alt="{{ image.description }}"
-                                style="max-width: 100%"
-                                class="img-responsive" />
-                        </p>
-                    {% endfor %}
-                </div>
+            <div class="featured-images text-center">
+                {% for image in post.featured_images %}
+                <p>
+                    <img
+                    data-src="{{ image.filename }}"
+                    src="{{ image.path }}"
+                    alt="{{ image.description }}"
+                    style="max-width: 100%"
+                    class="img-responsive" />
+                </p>
+                {% endfor %}
+            </div>
             {% endif %}
             <hr>
             <p class="excerpt">{{ post.summary }}</p>
             <a class="btn btn-primary" href="{{ 'post'|page({ slug: post.slug }) }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-    {% else %}
-        <p class="no-data">{{ noPostsMessage }}</p>
-    {% endfor %}
-</div>
+            {% else %}
+            <p class="no-data">{{ noPostsMessage }}</p>
+            {% endfor %}
+        </div>
 
-{% if posts.lastPage > 1 %}
-    <ul class="pagination">
-        {% if posts.currentPage > 1 %}
+        {% if posts.lastPage > 1 %}
+        <ul class="pagination">
+            {% if posts.currentPage > 1 %}
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
-        {% endif %}
+            {% endif %}
 
-        {% for page in 1..posts.lastPage %}
+            {% for page in 1..posts.lastPage %}
             <li class="{{ posts.currentPage == page ? 'active' : null }}">
                 <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
             </li>
-        {% endfor %}
+            {% endfor %}
 
-        {% if posts.lastPage > posts.currentPage %}
+            {% if posts.lastPage > posts.currentPage %}
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+            {% endif %}
+        </ul>
         {% endif %}
-    </ul>
-{% endif %}
-</div>
+    </div>
 
 
 
-<!-- Blog Entries Column -->
+    <!-- Blog Entries Column -->
     <!-- Pager -->
    <!-- <ul class="pager">
         <li class="previous">
