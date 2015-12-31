@@ -2,13 +2,13 @@ title = "Videos"
 url = "/dashboard/videos/manage"
 layout = "dash"
 ==
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="panel panel-default panel--video-manage">
-        <div class="panel-heading">
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default panel--video-manage">
+      <div class="panel-heading">
+        <div class="panel--video-manage-bar-actions">
           <div class="pull-left panel--title">Sort videos:&nbsp;</div>
-          <div class="col-md-4 pull-left">
+          <div class="col-md-2 col-lg-2 pull-left">
             <select>
               <optgroup label="Sort One">
                 <option value="newest">Newest</option>
@@ -26,53 +26,51 @@ layout = "dash"
             </select>
           </div>
         </div>
-        <div class="panel-body">
-          <div class="table-responsive">
-            <table class="table table-hover" id="video-list" data-order='[[ 1, "asc" ]]'>
-              <thead>
-                <tr>
-                  <th class="col-lg-1 hidden-xs hidden-sm">Thumbnail</th>
-                  <th class="col-lg-2 col-sm-4">Title</th>
-                  <th class="col-lg-1 col-sm-1">Uploaded on</th>
-                  <th class="col-lg-1 col-sm-1">Availability</th>
-                  <th class="col-lg-1 col-sm-1">Views</th>
-                  <th class="col-lg-1 col-sm-1">Likes/Dislikes</th>
-                  <th class="col-lg-1 col-sm-1">Comments</th>
-                </tr>  
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="hidden-xs hidden-sm"><img class="vthumbnail" src="{{ 'assets/img/thumb1.jpg'|theme }}" /></td>
-                  <td class="vtitle">Video Title 1</td>
-                  <td>11/15/2015</td>
-                  <td>Public</td>
-                  <td>50000</td>
-                  <td>500</td>
-                  <td>50</td>
-                </tr>
-                <tr>  
-                  <td class="hidden-xs hidden-sm"><img class="vthumbnail" src="{{ 'assets/img/thumb3.jpg'|theme }}" /></td>
-                  <td class="vtitle">Video Title 2</td>
-                  <td>11/13/2015</td>
-                  <td>Unlisted</td>
-                  <td>94000</td>
-                  <td>904</td>
-                  <td>94</td>
-                </tr>
-                <tr>
-                  <td class="hidden-xs hidden-sm"><img class="vthumbnail" src="{{ 'assets/img/thumb2.jpg'|theme }}" /></td>
-                  <td class="vtitle">Video Title 3</td>
-                  <td>10/31/2015</td>
-                  <td>Private</td>
-                  <td>90000</td>
-                  <td>914</td>
-                  <td>92</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table" id="video-list" data-order='[[ 1, "asc" ]]'>
+          <thead>
+            <tr>
+              <th class="col-lg-1 hidden-xs hidden-sm">Thumbnail</th>
+              <th class="col-lg-2 col-sm-4">Title</th>
+              <th class="col-lg-1 col-sm-1">Uploaded on</th>
+              <th class="col-lg-1 col-sm-1">Availability</th>
+              <th class="col-lg-1 col-sm-1">Views</th>
+              <th class="col-lg-1 col-sm-1">Likes/Dislikes</th>
+              <th class="col-lg-1 col-sm-1">Comments</th>
+            </tr>  
+          </thead>
+          <tbody>
+            <tr>
+              <td class="hidden-xs hidden-sm"><img class="vthumbnail" src="{{ 'assets/img/thumb1.jpg'|theme }}" /></td>
+              <td class="vtitle">Video Title 1</td>
+              <td>11/15/2015</td>
+              <td>Public</td>
+              <td>50000</td>
+              <td>500</td>
+              <td>50</td>
+            </tr>
+            <tr>  
+              <td class="hidden-xs hidden-sm"><img class="vthumbnail" src="{{ 'assets/img/thumb3.jpg'|theme }}" /></td>
+              <td class="vtitle">Video Title 2</td>
+              <td>11/13/2015</td>
+              <td>Unlisted</td>
+              <td>94000</td>
+              <td>904</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td class="hidden-xs hidden-sm"><img class="vthumbnail" src="{{ 'assets/img/thumb2.jpg'|theme }}" /></td>
+              <td class="vtitle">Video Title 3</td>
+              <td>10/31/2015</td>
+              <td>Private</td>
+              <td>90000</td>
+              <td>914</td>
+              <td>92</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>       
-</div>
+  </div>
+</div>       
