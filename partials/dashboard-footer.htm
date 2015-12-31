@@ -6,7 +6,9 @@
             $("#wrapper").toggleClass("toggled");
         });
         $("#sidebar-nav").metisMenu();
-        $("select").selecter();
+        $("select").selecter({
+          customClass: "sortVideoSelect"
+        });
         $(document).ready(function(){
           $('.navbar-twitch [data-toggle="tooltip"]').tooltip();
         });
