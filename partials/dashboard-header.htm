@@ -7,6 +7,9 @@
   <title>{% if( this.page.title == null ) %}MotionRealm{% else %}{{ this.page.title }} | MotionRealm{% endif %}</title>
   {% put styles %}
     {% partial "styles" %}
+    <style type="text/css">
+    	{% content 'dashboard-settings-media-queries.txt' %}
+    </style>
   {% endput %}
 </head>
 <body class="mr" id="{{ this.page.id }}">
