@@ -729,3 +729,12 @@ html {
         transform:rotate(360deg);
     }
 }
+.panel--video-manage .panel-heading {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.panel--video-manage >.panel-heading .panel--title {
+    position: relative;
+    top: 7px;
+}
