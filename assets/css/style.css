@@ -18,6 +18,10 @@ body, #home.mr {
 .navbar-default.navbar-twitch .navbar-nav > li > a {
 	color: #19B5FE;
 }
+.navbar-default.navbar-twitch .navbar-nav > li > a:hover,
+.navbar-default.navbar-twitch .navbar-nav > li > a:focus {
+	color: #fff;
+}
 .navbar-default.navbar-twitch .navbar-nav > li.active a {
 	color: #fff;
 }
