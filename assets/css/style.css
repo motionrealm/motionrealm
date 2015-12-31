@@ -171,6 +171,7 @@ body, #home.mr {
 		font-weight: bold;
 		font-size: 13pt;
 		width: 100%;
+		margin-left: 8%;
 	}
 	.navbar-twitch .navbar-nav > li > .subnav li a p{
 		font-weight: normal;
@@ -272,12 +273,10 @@ body, #home.mr {
 		padding: 0px 0px 20px 0px;
 		display: none;
 		width: 100vh;
-		
 	}
 	.navbar-twitch .navbar-nav > li:hover > .subnav{
 		display: block;
 	}
-
 	.navbar-twitch .navbar-nav > li > .subnav li.subnav-header {
 		font-size: 26pt;
 		font-weight: bold;
@@ -294,6 +293,7 @@ body, #home.mr {
 		font-weight: bold;
 		font-size: 18pt;
 		width: 100%;
+		margin-left: 10%;
 	}
 	.navbar-twitch .navbar-nav > li > .subnav li a p{
 		font-weight: normal;
@@ -411,6 +411,7 @@ body, #home.mr {
 		font-weight: bold;
 		font-size: 14pt;
 		width: 100%;
+		margin-left: 12%;
 	}
 	.navbar-twitch .navbar-nav > li > .subnav li a p{
 		font-weight: normal;
@@ -435,7 +436,7 @@ body, #home.mr {
 	.navbar-twitch .navbar-nav > li > .subnav li a p{
 		font-size: 10.1pt;
 		letter-spacing: -0.3px;
-		/*margin-left: 13%;*/
+		margin-left: 13%;
 	}
 	.navbar-twitch .navbar-nav > li > .subnav .fa-fw {
 		margin-left: 0px;
