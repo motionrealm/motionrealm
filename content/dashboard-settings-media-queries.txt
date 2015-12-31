@@ -1,0 +1,11 @@
+{% if 'settings' in this.page.id %}
+@media only screen and (min-width : 320px){
+	.mr { padding-top: 78px; }
+}
+@media only screen and (min-width : 480px){
+	.mr { padding-top: 88px; }
+}
+@media only screen and (min-width : 992px){
+	.mr { padding-top: 15px; padding-left: 78px; }
+}
+{% endif %}
