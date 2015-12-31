@@ -9,7 +9,7 @@
 		</div>
 		<div class="">
 			<ul class="nav navbar-nav">
-				<li class="{% if( this.page.id == 'settings') %}active {% endif %}">
+				<li>
 					<a href="#">
 						<span class="small-nav profile-nav" data-toggle="tooltip" data-placement="right" title="Profile"> 
 							<img src="{{ 'assets/img/profile.jpg'|theme }}" class="img-responsive img-circle" alt="Profile Pic" /> 
@@ -17,7 +17,7 @@
 					</a>
 					<ul class="subnav">
 						<li class="subnav-header">Profile</li>
-						<li><a href="#">
+						<li><a href="{{ 'dashboard/settings/account'|page }}">
 							<span class="fa fa-user fa-fw"></span>
 							Account Settings
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
@@ -133,7 +133,7 @@
 						</a></li>
 					</ul>
 				</li>
-				<li class="{% if( this.page.id == 'settings') %}active {% endif %}">
+				<li class="{% if( 'settings' in this.page.id ) %}active {% endif %}">
 					<a href="#">
 						<span class="small-nav" data-toggle="tooltip" data-placement="right" title="Settings"> 
 							<i class="icon-cog"></i> 
@@ -141,22 +141,22 @@
 					</a>
 					<ul class="subnav">
 						<li class="subnav-header">Settings</li>
-						<li><a href="#">
+						<li><a href="{{ 'dashboard/settings/channel'|page }}">
 							<i class="icon-tv fa-fw"></i>
 							Channel
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
 						</a></li>
-						<li><a href="#">
+						<li><a href="{{ 'dashboard/settings/defaults'|page }}">
 							<i class="icon-wrench fa-fw"></i>
 							Branding Defaults
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
 						</a></li>
-						<li><a href="#">
+						<li><a href="{{ 'dashboard/settings/social-management'|page }}">
 							<i class="icon-share2 fa-fw"></i>
 							Social Management
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
 						</a></li>
-						<li><a href="#">
+						<li><a href="{{ 'dashboard/settings/advanced'|page }}">
 							<i class="icon-wrench fa-fw"></i>
 							Advanced
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus rutrum leo, egestas tincidunt neque. </p>
