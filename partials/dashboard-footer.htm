@@ -1,16 +1,9 @@
   {% put scripts %}
       {% partial "scripts" %}
-      <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
+      <!--<script>
         $("#sidebar-nav").metisMenu();
         $("select").selecter({
           customClass: "sortVideoSelect"
-        });
-        $(document).ready(function(){
-          $('.navbar-twitch [data-toggle="tooltip"]').tooltip();
         });
         $('.selecter.open').ready(function(){
           $('.selecter.open').removeClass('focus bottom open').addClass('focus top open');
@@ -26,8 +19,7 @@
               "columnDefs": [ { "sortable": false, "targets": 0 } ]
             });
         } );
-        $('.subnav').perfectScrollbar();
-      </script>
+      </script>-->
     {% endput %}
   </body>
   </html>

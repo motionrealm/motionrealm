@@ -1,4 +1,4 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 {% framework %}
 {% if "account" in this.page.id %}
   {% framework extras %}
@@ -7,12 +7,7 @@
   <script src="{{ 'assets/js/perfect-scrollbar.jquery.js'|theme }}"></script>
   <script src="{{ 'assets/js/dropdowns-enhancement.js'|theme }}"></script>
 {% endif %}
-
-{% if this.environment == 'dev' %}
-  <script src="{{ 'assets/js/bootstrap.min.js'|theme }}" crossorigin="anonymous"></script>
-{% else %}
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-{% endif %}
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
   <script src="//cdn.datatables.net/1.10.10/js/dataTables.responsive.js"></script>
   <script src="{{ 'assets/js/icheck.min.js'|theme }}"></script>

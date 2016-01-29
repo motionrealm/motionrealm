@@ -6,13 +6,8 @@
   <link href="{{ 'assets/css/perfect-scrollbar.min.css'|theme }}" rel="stylesheet">
 {% endif %}
 
-{% if this.environment == 'dev' %}
-  <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ 'assets/css/font-awesome.min.css'|theme }}" crossorigin="anonymous">
-{% else %}
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-{% endif %} 
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ 'assets/css/font-awesome.min.css'|theme }}" crossorigin="anonymous">
     <link href="//cdn.datatables.net/1.10.10/css/responsive.dataTables.css" rel="stylesheet">
     <link href="//cdn.datatables.net/1.10.10/css/responsive.bootstrap.css" rel="stylesheet">
     <link href="//cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css" rel="stylesheet">
