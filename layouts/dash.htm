@@ -2,8 +2,10 @@ name = "Dashboard"
 ==
 {% partial "dashboard-header" %}
 {% styles %}
-<div class="container">
-{% page %}
+<div class="container" id="content">
+	<div id="content-default">
+		{% page %}
+	</div>
 </div>
 {% partial "dashboard-footer" %}
 {% scripts %}

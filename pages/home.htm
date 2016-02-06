@@ -1,47 +1,51 @@
+title = "Home"
 url = "/"
 layout = "home"
+is_hidden = 0
 
-[session]
-security = "guest"
-redirect = "dashboard"
 ==
+<!--nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="#menu-toggle" class="navbar-toggle collapsed" id="menu-toggle" aria-expanded="false">
+          	<span class="sr-only">Toggle navigation</span>
+          	<span class="icon-bar"></span>
+          	<span class="icon-bar"></span>
+          	<span class="icon-bar"></span>
+          </a>
+          <a class="navbar-brand" href="{{ 'home'|page }}"><img alt="{{ this.theme.site_name }}" src="{{ 'assets/img/bs-navbar-logo.png'|theme }}"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      </div>
+  </div>
+</nav-->
 <div class="wrapper">
-	<div class="bs-wrapper" style="background-image: url({{ 'assets/img/control-room.jpg'|theme }});">
+	<div class="bs-wrapper">
 	<div class="jumbotron" id="boot-screen">
 		<div class="container">
-			<div class="col-md-8" class="bs-left">
+			<div class="col-md-8 col-lg-8" class="bs-left">
 				{% partial "motionrealm_wlogo" %}
-				<h1>Make content more.</h1>
-				<p class="lead">Access to the most powerful video creation tools, discuss and collaborate with other creators, manage your channel, and find cool stuff that you can integrate to your content for free.
+				<h1>Your content, delivered everywhere in one click.</h1>
+				<p class="lead">Subscribe and stay tuned for new announcements.
 				</p>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-default" id="signUp">
-					<div class="panel-body">
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" id="signUp_Name" placeholder="Your name">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="signUp_Username" placeholder="Pick your username">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="signUp_Email" placeholder="Enter your e-mail">
-							</div>
-							<div class="form-group">
-								<input type="password" class="form-control" id="signUp_Password" placeholder="Your password">
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Check me out
-								</label>
-							</div>
-							<button type="submit" class="btn btn-success btn-lg btn-block">Sign-up</button>
-							<p class="text-center">- or -</p>
-							<button type="submit" class="btn btn-danger btn-block">Sign-in using Google</button>
-						</form>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="input-group">
+					      <input type="text" class="form-control" placeholder="Enter your e-mail ">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">Go!</button>
+					      </span>
+					    </div>
 					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 	</div>

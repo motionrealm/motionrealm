@@ -26,10 +26,13 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><i class="icon-list2"></i> Dashboard <span class="sr-only">(current)</span></a></li>
-          <li><a href="#"><i class="icon-folder-open"></i> Manager</a></li>
-          <li><a href="#"><i class="icon-wrench"></i> Tools</a></li>
-          <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+          <li class="{% if( this.page.id == 'dashboard') %}active {% endif %}"><a rel="senna-route" href="{{ 'dashboard'|app }}" type="HtmlScreen"><i class="icon-list2"></i> Dashboard <span class="sr-only">(current)</span></a></li>
+          <li class="{% if( 'videos' in this.page.id ) %}active {% endif %}"><a rel="senna-route" href="{{ 'dashboard/videos/manage'|app }}" type="HtmlScreen"><span class="fa fa-server"></span> Manager</a></li>
+          <li class="{% if( this.page.id == 'dashboard-playlists') %}active {% endif %}"><a href="#"><i class="icon-wrench"></i> Tools</a></li>
+          <li class="{% if( 'settings' in this.page.id ) %}active {% endif %}"><a rel="senna-route" href="{{ 'dashboard/settings'|app }}" type="HtmlScreen"><i class="icon-cog"></i> Settings</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a data-request="onLogout">Logout</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

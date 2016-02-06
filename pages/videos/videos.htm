@@ -3,13 +3,26 @@ url = "/dashboard/videos/manage"
 layout = "dash"
 ==
 <div class="row">
-  <div class="col-md-12">
+
+  <div class="col-md-3">
+    <div class="panel panel-default">
+    <div class="panel-heading">Title</div>
+      <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Videos</a></li>
+          <li><a href="#">Playlists</a></li>
+          <li><a href="#">Tags</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
     <div class="panel panel-default panel--video-manage">
       <div class="panel-heading">
         <div class="panel--video-manage-bar-actions">
           <div class="pull-left panel--title">Sort videos:&nbsp;</div>
-          <div class="col-md-2 col-lg-2 pull-left">
-            <select>
+          <div class="col-md-3 col-lg-3 pull-left">
+            <!--select>
               <optgroup label="Sort One">
                 <option value="newest">Newest</option>
                 <option value="mostViewed">Most Viewed</option>
@@ -24,14 +37,14 @@ layout = "dash"
           <div class="pull-left panel--title">
             Show # of entries:
           </div>
-          <div class="col-md-1 col-lg-1 pull-left">
+          <div class="col-md-2 col-lg-2 pull-left">
             <select>
               <option value="10">10</option>
               <option value="20">20</option>
               <option value="30">30</option>
               <option value="40">40</option>
               <option value="50">50</option>
-            </select>
+            </select-->
           </div>
         </div>
       </div>

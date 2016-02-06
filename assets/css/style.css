@@ -25,13 +25,33 @@ body, #home.mr {
 	padding-bottom: 20px;
 }
 
+.motionrealm-navbar .navbar-header {
+	padding-bottom: 0px;
+	margin-top: -37px;
+}
+
 .motionrealm-navbar .navbar-header .navbar-brand {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	font-size: 40px;
+	font-weight: normal;
+	padding-bottom: 51px;
+	padding-top: 51.1px;
+	margin-top: -5px;
 }
 
 .motionrealm-navbar .nav > li > a {
 	padding: 20px 20px;
+}
+
+.panel--upper-info-stats h4 {
+	margin-bottom: 0;
+}
+
+.panel--upper-info-stats #statsCounter {
+	border-left: black 2px solid;
+}
+
+.panel--upper-info-stats #statsCounter:first-child {
+	border: none;
 }
 
 /* Off the line */
@@ -119,12 +139,7 @@ html {
 
 /* Home */
 #boot-screen.jumbotron {
-	background: rgb(25,181,254);
-	background: -moz-linear-gradient(-45deg,  rgba(25,181,254,0.6) 0%, rgba(1,103,151,1) 100%);
-	background: -webkit-linear-gradient(-45deg,  rgba(25,181,254,0.6) 0%,rgba(1,103,151,1) 100%);
-	background: linear-gradient(180deg,  rgba(25,181,254,0.6) 0%,rgba(1,103,151,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19b5fe', endColorstr='#016797',GradientType=1 );
-	opacity: 50%;
+	background-color: #19B5FE;
 	margin: 0;
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -132,7 +147,7 @@ html {
 	border-radius: 0px;
 	margin-top: -8.6px;
 	min-height: 100vh;
-	max-height: 100vh;
+	max-height: 102.95vh;
 }
 
 .bs-wrapper {
@@ -153,10 +168,10 @@ html {
 }
 
 #boot-screen h1 {
-	font-size: 73px;
+	font-size: 68px;
 	font-weight: bold;
-	letter-spacing: -4.99px;
-	line-height: 0.81em;
+	letter-spacing: -3.50px;
+	line-height: 0.950em;
 	margin-top: -10px;
 	width: 92.72%;
 	padding-top: 10px;
